@@ -1,0 +1,127 @@
+
+body
+{
+    background-color: #f7ecde;
+} 
+h1
+{
+    font-family: "Pacifico", serif;
+    font-weight: 500;
+    font-size: 50px;
+    font-style: normal;
+    position: relative;
+}
+h1::after
+{
+    content: "";
+    position: absolute;
+    width: 25%;
+    height: 10%;
+    bottom: 50px;
+    left: 50%;
+    transform: translatex(-50%);
+    background-color:#fec260;
+    cursor: text;
+    transition: height 0.2s ;
+    z-index: -1;
+}
+h1:hover::after
+{
+    height: 20%;
+}
+
+section .contant h2 
+{
+    font-family: "Righteous", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #b5ac49;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color: transparent;
+
+}
+.about h5
+{
+    font-size: 16px;
+    font-weight:500;
+}
+label h5
+{
+    font-size: 16px;
+    font-weight:500;
+}
+.btn
+{
+    text-align:center;
+    padding: 15 25px;
+    border:25px;
+    width:40%;
+    margin-left:200px;
+}
+
+tr{
+    border-bottom:2px solid #ddd;
+    padding: 20px;
+    border-radius: 6px;
+}
+.overlay{
+    position:absolute ;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #00000075;
+    z-index: 5555;
+    opacity: 0;
+    z-index: -1;
+}
+
+.snap{
+    width: 50%;
+    height: 50%;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.balls >div
+{
+    width: 30px;
+    height: 30px;
+}
+.p-icon{
+    font-size:25px;
+}
+.fa-regularP{
+    font-size: 25px;
+}
+.close-icon{
+    font-size:20px;
+    cursor: pointer;
+}
+.form-control:focus
+{
+    outline: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    outline: 2px solid #fec260 !important;
+    -webkit-bo-shadow:10px 10px 5px -3px rgba(231,166,26,0.53);
+    box-shadow: 10px 10px 5px -3px rgba(231,166,26,0.53) !important;
+}
+
+.clear{
+
+    opacity: 0;
+    z-index: -1;
+}
+.appear
+{
+    opacity: 1;
+    z-index: 5;
+}
+
+hr
+{
+    border-style: dotted;
+}
